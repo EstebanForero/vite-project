@@ -5,7 +5,12 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        'belcorp-blue': '#0057B8',
+        'belcorp-gray': '#4D4D4D',
+      },
+    },
   },
   plugins: [],
 }

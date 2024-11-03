@@ -1,9 +1,8 @@
-// src/App.js
 import React, { useState } from 'react';
-import Chat from './components/Chat';
+import Chat from './components/chat';
 
-function App() {
-  const [isChatOpen, setIsChatOpen] = useState(false);
+const App: React.FC = () => {
+  const [isChatOpen, setIsChatOpen] = useState<boolean>(false);
 
   const toggleChat = () => {
     setIsChatOpen(!isChatOpen);
@@ -14,7 +13,7 @@ function App() {
       {/* Header */}
       <header className="bg-white shadow">
         <div className="container mx-auto px-6 py-4">
-          <h1 className="text-3xl font-bold text-gray-800">Belcorp</h1>
+          <h1 className="text-3xl font-bold text-belcorp-blue">Belcorp</h1>
         </div>
       </header>
 
@@ -57,7 +56,7 @@ function App() {
       </main>
     </div>
   );
-}
+};
 
 export default App;
 
