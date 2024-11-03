@@ -20,7 +20,7 @@ const Chat: React.FC = () => {
     setInput('');
 
     try {
-      const response = await axios.post('http://localhost:8080/ask-claude', {
+      const response = await axios.post('https://backendclaude-production.up.railway.app/ask-claude', {
         message: input,
       });
 
